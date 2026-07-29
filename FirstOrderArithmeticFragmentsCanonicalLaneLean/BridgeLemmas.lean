@@ -1,0 +1,14 @@
+import FirstOrderArithmeticFragmentsCanonicalLaneLean.AdmissibleClass
+
+namespace HautevilleHouse
+namespace FirstOrderArithmeticFragmentsCanonicalLaneLean
+
+def bridgeClosed (A : AdmissibleClass) : Prop :=
+  ArithmeticWitnessClosed A.object
+
+theorem bridge_from_admissible_class (A : AdmissibleClass) :
+    bridgeClosed A := by
+  exact A.object.conclusion
+
+end FirstOrderArithmeticFragmentsCanonicalLaneLean
+end HautevilleHouse
